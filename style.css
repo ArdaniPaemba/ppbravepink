@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #ff9ccc 0%, #2a7e4a 100%);
+  background-attachment: fixed;
+  padding: 40px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+}
+h1 {
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.section {
+  margin: 30px auto;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+.privacy-notice {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 15px 0;
+  line-height: 1.5;
+}
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.btn {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+}
+.btn.pink {
+  background: #f784c5;
+  box-shadow: 0 4px 12px rgba(247, 132, 197, 0.5);
+}
+
+.btn.green {
+  background: #1b602f;
+  box-shadow: 0 4px 12px rgba(27, 96, 47, 0.5);
+}
+
+.btn.download {
+  background: #333;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.canvas-container {
+  margin: 30px auto;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+canvas {
+  max-width: 100%;
+  border: 3px solid #fff;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+}
+.credit {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: #fff;
+  opacity: 0.7;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .section {
+    padding: 15px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .credit {
+    font-size: 0.75rem;
+  }
+}
