@@ -9,28 +9,34 @@
 </head>
 <body>
   <div class="container">
-    <h1>Brave Pink & Hero Green Generator</h1>
+    <h1 class="animate">Brave Pink & Hero Green Generator</h1>
     
-    <div class="section">
+    <div class="section animate">
       <input type="file" id="upload" accept="image/*">
-      <p class="privacy-notice">Dukung perjuangan rakyat untuk keadilan dan perubahan dengan ikut tren Brave Pink Hero Green! Ubah foto profilmu sekarang dan tunjukkan solidaritasmu. Upload foto, tekan tombol ini, kemudian download gambarmu!.</p>
+      <p class="privacy-notice animate">
+        Dukung perjuangan rakyat untuk keadilan dan perubahan dengan ikut tren Brave Pink Hero Green! 
+        Ubah foto profilmu sekarang dan tunjukkan solidaritasmu. Upload foto, tekan tombol, lalu download hasilnya!
+        <span class="warning" id="browser-warning" style="display: none; color: red;">
+          <br>Catatan: Pengunduhan mungkin tidak berfungsi di browser Instagram. Buka di Chrome atau Safari untuk hasil terbaik.
+        </span>
+      </p>
       <div class="buttons">
-        <button class="btn pink" onclick="applyDuotone('pink')">Brave Pink dan Hero Green</button>
+        <button class="btn pink animate" onclick="applyDuotone('pink')">Brave Pink & Hero Green</button>
       </div>
     </div>
 
-    <div class="canvas-container">
+    <div class="canvas-container animate">
       <canvas id="canvas"></canvas>
     </div>
     
-    <div>
-      <a id="download" href="#" download="hasil.png" class="btn download">Download Hasil</a>
+    <div class="download-container animate">
+      <button id="download" class="btn download">Download Hasil</button>
     </div>
 
-    <footer class="credit">Website by Ardan</footer>
+    <footer class="credit animate">Website by Ardan</footer>
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
   <script src="script.js"></script>
 </body>
-
 </html>
