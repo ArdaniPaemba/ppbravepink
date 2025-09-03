@@ -67,12 +67,6 @@ h1 {
   background: #f784c5;
   box-shadow: 0 4px 12px rgba(247, 132, 197, 0.5);
 }
-
-.btn.green {
-  background: #1b602f;
-  box-shadow: 0 4px 12px rgba(27, 96, 47, 0.5);
-}
-
 .btn.download {
   background: #333;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
